@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Login To Shopping Cart</title>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-sm">
+        <h2 class="text-2xl font-bold mb-6 text-center">Login To Shopping Cart</h2>
+        <form class="w-full max-w-sm mx-auto p-4 rounded" id="loginForm">
+            <!-- حقل إدخال البريد الإلكتروني -->
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email address</label>
+                <input type="email" id="email"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Enter email">
+                <p class="text-xs text-gray-600 mt-2">We'll never share your email with anyone else.</p>
+            </div>
+
+            <!-- حقل إدخال كلمة المرور -->
+            <div class="mb-4 relative">
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password</label>
+                <input type="password" id="password"
+                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    placeholder="Password">
+                <button type="button" id="togglePassword"
+                    class="absolute inset-y-0 right-0 top-7 flex items-center px-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="eyeIcon" class="h-5 w-5 text-gray-700"
+                        viewbox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2C5.58 2 1.79 5.58 1 10c.79 4.42 4.58 8 9 8s8.21-3.58 9-8c-.79-4.42-4.58-8-9-8zm0 12c-1.11 0-2-.89-2-2s.89-2 2-2 2 .89 2 2-.89 2-2 2zm0-9c2.48 0 4.73 1.5 5.71 3.75C14.73 12.5 12.48 14 10 14s-4.73-1.5-5.71-3.75C5.27 6.5 7.52 5 10 5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- زر الإرسال -->
+            <button type="submit"
+                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <!-- رابط ملف JavaScript -->
+    <script src="../javaScript/login.js"></script>
+</body>
+
+</html>

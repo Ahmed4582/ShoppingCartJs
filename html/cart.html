@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- الهيدر الذي يحتوي على الشعار والأيقونات -->
+    <header class="bg-white shadow">
+        <nav class="container mx-auto flex justify-between items-center py-4">
+            <!-- الشعار -->
+            <div class="flex items-center">
+                <img src="../img/Group 82.png" alt="Logo">
+            </div>
+            <!-- الأيقونات (أيقونة المستخدم والسلة) -->
+            <div class="flex items-center space-x-4 cursor-pointer">
+                <!-- أيقونة المستخدم مع اسم المستخدم -->
+                <div class="flex items-center space-x-3">
+                    <img src="../img/Vector.png" alt="User Icon" onclick="window.location.href='logout.html'">
+                    <a id="username" class="text-gray-700 font-medium cursor-pointer"
+                        onclick="window.location.href='logout.html'">اسم المستخدم</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي لعرض محتويات السلة -->
+    <main class="container mx-auto p-6">
+        <h1 class="text-2xl font-bold mb-4">Your Cart</h1>
+        <div id="cartItems" class="grid grid-cols-1 gap-6"></div>
+    </main>
+
+    <script src="../javaScript/cart.js"></script>
+</body>
+
+</html>
